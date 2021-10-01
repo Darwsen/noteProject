@@ -39,8 +39,9 @@
         right: 0;
         box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        padding: 1.5em;
     }
     
     .navMenu {
@@ -49,6 +50,8 @@
         align-items: center;
         flex-wrap: nowrap;
         margin-left: 2em;
+        position: absolute;
+        left: 2em;
     }
     
     .navMenu h2 img {
