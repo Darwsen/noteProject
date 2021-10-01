@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Notizblock</title>
+    <link rel="stylesheet" type="text/css" href="src\css\styles.css">
+    <script src="src/js/include.js"></script>
+    <script src="src/js/script.js"></script>
+</head>
+
+<body onload="render()">
+
+    <main>
+        <article>
+
+            <section>
+                <div w3-include-html="src/templates/nav.html">
+                </div>
+            </section>
+
+            <section>
+                <div w3-include-html="src/templates/aside.html">
+                </div>
+            </section>
+
+            <section>
+                <div id="insertBlock" class="insert" w3-include-html="src/templates/insertBlock.html">
+
+                </div>
+            </section>
+
+            <section>
+                <h2 id="titleTrashBin" class="d-none titleTrash width-100">Papierkorb</h2>
+                <div id="notes">
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?thirdparty=1&always=1"></script>
+    </footer>
+
+
+</body>
+
+</html>

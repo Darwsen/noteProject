@@ -1,0 +1,321 @@
+    @font-face {
+        font-family: "raleway";
+        src: url(../fonts/raleway/static/Raleway-Regular.ttf) format("truetype");
+        font-style: normal;
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: "raleway_bold";
+        src: url(../fonts/raleway/static/Raleway-Bold.ttf) format("truetype");
+        font-style: normal;
+        font-weight: bold;
+    }
+    
+    @font-face {
+        font-family: "raleway_italic";
+        src: url(../fonts/raleway/static/Raleway-Italic.ttf) format("truetype");
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+    body {
+        font-family: "raleway";
+    }
+    
+    aside button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .d-none {
+        display: none !important;
+    }
+    
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navMenu {
+        margin: 0.5em;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-left: 2em;
+    }
+    
+    .navMenu h2 img {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    
+    .noData .navMenuIcon {
+        border-radius: 4px;
+        padding: 2px;
+        filter: opacity(0.6);
+        cursor: pointer;
+    }
+    
+    .noDataNotes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .noDataNotes h3 {
+        border-radius: 4px;
+        box-shadow: 0 2px 2px 2px rgb(0 0 0 / 14%);
+        padding: 8px;
+    }
+    
+    .navMenuIcon:hover {
+        background-color: grey;
+    }
+    
+    .navMenu h2 {
+        display: flex;
+        flex-wrap: nowrap;
+        color: rgb(0 0 0 / 60%);
+    }
+    
+    .navMenuBtn {
+        height: 32px;
+        width: 32px;
+        margin: 0 4px;
+        padding: 0 10px;
+        background-color: white;
+        border: none;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn {
+        height: 32px;
+        width: 32px;
+        margin: 0 4px;
+        padding: 0 10px;
+        background-color: white;
+        border: none;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn img {
+        width: 24px;
+        object-fit: contain;
+        filter: opacity(0.6);
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        transition: 225ms;
+        background-color: gray;
+    }
+    
+    .navIcons {
+        display: flex;
+        flex-wrap: nowrap;
+        filter: opacity(0.6);
+    }
+    
+    .navIcons img {
+        border-radius: 4px;
+        padding: 2px;
+        margin-left: 1em;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+    
+    .navIcons img:hover {
+        background-color: gray;
+    }
+    
+    .inputElement {
+        height: 32px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        width: 100%;
+    }
+    
+    .formSearch {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid gray;
+        padding: 8px;
+        border-radius: 8px;
+        width: 50vw;
+        border: none;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .insert {
+        position: absolute;
+        top: 100px;
+        left: 128px;
+        right: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .insertForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 8px;
+        border-radius: 8px;
+        width: 50%;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 96px;
+    }
+    
+    aside img {
+        margin: 12px;
+        padding: 12px;
+        border-radius: 100%;
+        object-fit: contain;
+        width: 32px;
+        filter: opacity(0.6);
+        cursor: pointer;
+    }
+    
+    #notes {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 192px;
+        left: 96px;
+        right: 12px;
+        color: rgb(0 0 0 / 60%);
+    }
+    
+    .notesTop {
+        top: 156px !important;
+    }
+    
+    aside img:hover {
+        background-color: gray;
+    }
+    
+    .note {
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        max-width: 100%;
+        margin: 12px 8px;
+        border-radius: 8px;
+        padding: 4px 16px;
+        box-shadow: 2px 3px 3px 2px rgb(0 0 0 / 14%);
+        border: none;
+    }
+    
+    .note h2 {
+        margin-top: 2px;
+    }
+    
+    .noteButtons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .btnSearch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #inputTitel {
+        font-size: large;
+        text-decoration: dashed;
+        margin-bottom: 0.6em;
+    }
+    
+    .width-100 {
+        width: 100%;
+    }
+    
+    .titleTrash {
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        z-index: -1;
+        color: rgb(0 0 0 / 60%);
+    }
+    
+    @media (max-width: 900px) {
+        .formSearch {
+            display: none;
+        }
+        .insertForm {
+            flex-direction: column;
+        }
+        #notes {
+            top: 250px;
+            left: 96px;
+            display: flex;
+            justify-content: center;
+        }
+        .insert {
+            left: 8px;
+            right: 8px;
+        }
+        .insertForm {
+            width: 100%;
+            max-width: 312px;
+        }
+    }
+    
+    @media (max-width:460px) {
+        nav {
+            flex-direction: column;
+        }
+        .navIcons {
+            margin-bottom: 8px;
+        }
+        .insert {
+            top: 132px;
+            left: 8px;
+            right: 8px;
+        }
+        .insertForm {
+            width: 100%;
+        }
+        .btnSearch {
+            flex-direction: column;
+        }
+        aside {
+            display: none;
+        }
+        .inputElement input {
+            max-width: 99%;
+        }
+        #notes {
+            top: 320px;
+            left: 0;
+        }
+    }
